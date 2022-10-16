@@ -1,0 +1,7 @@
+{
+  "name": "PRY10110182-MOVIL",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

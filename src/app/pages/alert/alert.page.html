@@ -1,0 +1,30 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Hola,
+        <br/>
+        Cuál es tú
+        <br>
+        Emergencia?
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        
+          <ion-select interface="popover" placeholder="Select">
+            <ion-select-option value="nes">Incendio</ion-select-option>
+            <ion-select-option value="n64">Medico</ion-select-option>
+            <ion-select-option value="ps">Accidente</ion-select-option>
+            <ion-select-option value="genesis">vehicular</ion-select-option>
+          </ion-select>
+          <p class="type-emergency">Tipo de Emergencia</p>
+       
+        <ion-select interface="popover" placeholder="Select">
+          <ion-select-option value="nes">Fuga de Gas</ion-select-option>
+          <ion-select-option value="n64">Homicidio</ion-select-option>
+        </ion-select>
+        <ion-button expand="block" routerLink="/location" color="danger">Alerta</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
